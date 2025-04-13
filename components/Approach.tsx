@@ -16,9 +16,7 @@ const Approach = () => {
         <Card
           title="Planning & Strategy"
           icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+          des=" Every project starts with clarity. I work closely with clients to translate business goals into system workflows, define how data should move, identify integration points, and ensure the foundation aligns with both user expectations and long-term scalability"
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -29,9 +27,7 @@ const Approach = () => {
         <Card
           title="Development & Progress Update"
           icon={<AceternityIcon order="Phase 2" />}
-          des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          des="I build in structured phases. Each feature is developed with purpose, validated in context, and shared transparently with progress updates. Clients are kept informed throughout as we align on the evolving product and refine based on real-world use cases"
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -51,9 +47,7 @@ const Approach = () => {
         <Card
           title="Development & Launch"
           icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          des="Once the system is complete, I validate the experience end to end. This includes behavioral testing, optimization across layers, and ensuring the product is prepared to scale, recover, and adapt. The launch is not just a delivery — it is a transition into dependable operation"
         >
           <CanvasRevealEffect
             animationSpeed={3}

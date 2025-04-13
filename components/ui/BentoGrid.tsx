@@ -66,7 +66,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "jagannathps2000@gmail.com";
+    const text = "bukyadinesh17@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -152,11 +152,11 @@ export const BentoGridItem = ({
                   particleColor="#FFFFFF"
                 />
                 <a
-                  href="https://drive.google.com/file/d/154jAik4Q_HciluYtfJZbBDVVgfrQuIoR/view?usp=sharing"
+                  href="https://medium.com/@bukyadinesh17"
                   target="_blank"
                 >
                   <div className="z-10">
-                    <LitupButton name="View Resume" />
+                    <LitupButton name="View Medium" />
                   </div>
                 </a>
               </>

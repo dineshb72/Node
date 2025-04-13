@@ -1,6 +1,7 @@
 export const navItems = [
     { name: "About", link: "#about" },
-    { name: "Resume", link: "https://drive.google.com/file/d/154jAik4Q_HciluYtfJZbBDVVgfrQuIoR/view?usp=drive_link" },
+    { name: "Work Experience", link: "#experience" },
+   // { name: "Resume", link: "https://drive.google.com/file/d/154jAik4Q_HciluYtfJZbBDVVgfrQuIoR/view?usp=drive_link" },
     { name: "Projects", link: "#projects" },
     //{ name: "Testimonials", link: "#testimonials" },
     
@@ -10,7 +11,7 @@ export const navItems = [
   export const gridItems = [
     {
       id: 1,
-      title: "I prioritize open communication with my clients for the best quality results",
+      title: "In my experience, the most reliable systems come from a balance of deep technical ownership and continuous alignment with evolving client expectations",
       description: "",
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
@@ -20,7 +21,7 @@ export const navItems = [
     },
     {
       id: 2,
-      title: " Flexibility is my promise ",
+      title: " I build beyond scope, because impact is never listed in the requirements ",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2 min-h-[40vh] select-none",
       imgClassName: "",
@@ -30,14 +31,15 @@ export const navItems = [
     },
     {
       id: 3,
-      title: "My Resume",
-      description: "Are you hiring? Check out ",
+      title: "My Articles",
+      description: "Insights on scalable architecture, fullstack implementation, and backend logic workflows",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2 flex",
       imgClassName: "",
       titleClassName: "justify-end",
       img: "",
       spareImg: "",
-    },
+      link: "https://medium.com/@bukyadinesh17",
+    }, 
     {
       id: 4,
       title: "Tech enthusiast with a passion for development.",
@@ -51,12 +53,12 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Clean Code and Modern Design",
-      description: "Passionate about transforming ideas into reality.",
+      title: "Code That Connects Systems and Solves Business",
+      description: "8 years of building full stack pipelines that scale, sync, and evolve with client needs",      
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
       titleClassName: "justify-center md:justify-start lg:justify-center",
-      img: "/b5.svg",
+      img: "/nec (2).png",
       spareImg: "/grid.svg",
     },
     {
@@ -72,24 +74,23 @@ export const navItems = [
   ];
   
   export const projects = [
-        {
+    {
       id: 1,
-      title: "Whitesoft",
-      des: "Whitesoft is an ERP-CRM app build for Haritha Agritech Customized for their requirements",
-      img: "/haritha.png",
-      iconLists: ["/science.png",  "/tail.svg", "/supabase.png"],
-      link: "https://github.com/jagannath-p-s",
+      title: "API Integration Utility",
+      des: "A dynamic product integration interface that fetches and renders real-time data from public APIs — built to demonstrate modular API handling, responsive product layouts, and scalable frontend patterns for e-commerce environments.",
+      img: "/api-int.png", 
+      iconLists: ["/java.png", "/react.png", "/postgre.png","/docker.png"],
+      link: "https://dineshb72.github.io/api-integration/",
     },
     {
       id: 2,
-      title: "Gym CRM",
-      des: "We made a customized management app for Her Chamber Fitness , Permanagalam , with attendance tracking and reports , membership management and automated notifications , Expense and income management ,  ",
-      img: "chamber.png",
-      iconLists: ["/science.png",  "/tail.svg", "/supabase.png","/mui.svg"],
-      link: "https://github.com/jagannath-p-s",
-      
+      title: "Fullstack Product Management Platform",
+      des: "A full-stack product management platform integrating a TypeScript-based React frontend with a Spring Boot backend. Features include dynamic product listing, cart functionality, and seamless API communication, all containerized with Docker for scalable deployment.",
+      img: "/cover.png", 
+      iconLists: ["/Typescript_logo.png", "/js.png", "/spring.png", "/docker.png"],
+      link: "https://github.com/dineshb72/Product_Dev",
     },
-    {
+  /*  {
       id: 3,
       title: "Regal idustries",
       des: "Build A static site for a business to enhance his online presence , The site is on top of search results",
@@ -105,10 +106,10 @@ export const navItems = [
       img: "/digi.png",
       iconLists: ["/science.png",  "/tail.svg", "/supabase.png","/mui.svg"],
       link: "https://github.com/jagannath-p-s",
-    },
-  ];
+    }, */
+  ]; 
   
-  export const testimonials = [
+  /*export const testimonials = [
     {
       quote:
         "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
@@ -172,36 +173,44 @@ export const navItems = [
       img: "/dock.svg",
       nameImg: "/dockerName.svg",
     },
-  ];
+  ]; */
   
   export const workExperience = [
     {
       id: 1,
-      title: "Linux Clipboard App",
-      desc: "Made a linux App that can be used to copy multiple codes at once and paste according to the sequence",
+      title: "Caterpillar (Jan 2023 – Present)",
+      desc: "Built full stack enterprise solutions for inventory and order workflows using React, Spring Boot microservices, Kafka, GraphQL, PostgreSQL, and AWS.",
       className: "md:col-span-2",
-      thumbnail: "/exp1.svg",
+      thumbnail: "/CaterpillarLogo.png",
     },
     {
       id: 2,
-      title: "React Library",
-      desc: "Developed a React library called react-infinite-scroller which is used to create horizontal logo animations , its still in improvement stage ",
-      thumbnail: "/exp2.svg",
+      title: "New Relic (June 2021 – Dec 2022)",
+    desc: "Developed version control platform with React, Node.js, and Spring Boot. Integrated rollback systems, audit logs, and deployed via AWS.",
+      thumbnail: "/new_relic.svg",
     },
     {
       id: 3,
-      title: "Freelance Project",
-      desc: "Developed a AR based web application for a client to present his machines AR gltf files to get funding for his big project , have signed a NDA",
+      title: "HomeGoods (Jan 2020 – May 2021)",
+      desc: "Engineered Angular + Spring Boot platform for real-time order tracking, inventory sync, and RabbitMQ event processing. Deployed on Azure Kubernetes.",
       className: "md:col-span-2",
-      thumbnail: "/exp3.svg",
+      thumbnail: "/HomeGoods_logo.png",
     },
     {
       id: 4,
-      title: "Team Lead",
-      desc: "Led the team of developers at whitebranding for multiple projects for a period of 6 months",
+      title: "Sentara Healthcare (July 2018 – Dec 2019)",
+      desc: "Created HIPAA-compliant microservices with Spring Boot, Redis, and AWS (RDS & DynamoDB) for secure, real-time EHR syncing.",
       className: "md:col-span-2",
-      thumbnail: "/exp4.svg",
+      thumbnail: "/Sentara_logo.jpg",
     },
+    {
+      id: 4,
+      title: "Citrix Systems (Apr 2016 – Jun 2018)",
+    desc: "Worked on CloudConnect internal platform as a Java Full Stack Intern, contributing to dashboard UIs using React.js and backend APIs with Spring Boot, deployed on AWS with CI/CD automation.",
+      className: "md:col-span-2",
+      thumbnail: "/citrix_logo.png",
+    },
+
   ];
   
   
@@ -209,16 +218,12 @@ export const navItems = [
     {
       id: 1,
       img: "/git.svg",
-      href: "https://github.com/jagannath-p-s",
+      href: "https://github.com/dineshb72",
     },
-    {
-      id: 2,
-      img: "/twit.svg",
-      href: "https://x.com/jagannathps2000",
-    },
+    
     {
       id: 3,
       img: "/link.svg",
-      href: "https://www.linkedin.com/in/jagannath-ps",
+      href: "www.linkedin.com/in/dinesh-b-288a30151",
     },
   ];
