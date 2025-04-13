@@ -199,7 +199,7 @@ export const navItems = [
     {
       id: 4,
       title: "Sentara Healthcare (July 2018 – Dec 2019)",
-      desc: "Created HIPAA-compliant microservices with Spring Boot, Redis, and AWS (RDS & DynamoDB) for secure, real-time EHR syncing.",
+      desc: "Created HIPAA-compliant microservices with Spring Boot, Redis, and AWS (RDS & DynamoDB) for secure, real-time EHR syncing",
       className: "md:col-span-2",
       thumbnail: "/Sentara_logo.jpg",
     },
