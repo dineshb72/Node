@@ -1,5 +1,6 @@
 "use client";
-import { IconCloud } from "@/components/ui/IconCloud";
+import dynamic from "next/dynamic";
+const IconCloud = dynamic(() => import('@/components/ui/IconCloud').then(mod => mod.default), { ssr: false });
 
 const slugs = [
 "java",

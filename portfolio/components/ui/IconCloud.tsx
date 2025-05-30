@@ -63,7 +63,8 @@ export type DynamicCloudProps = {
 
 type IconData = Awaited<ReturnType<typeof fetchSimpleIcons>>;
 
-export function IconCloud({ iconSlugs }: DynamicCloudProps) {
+function IconCloud({ iconSlugs }: DynamicCloudProps) {
+
   const [data, setData] = useState<IconData | null>(null);
   const { theme } = useTheme();
 
@@ -86,3 +87,5 @@ export function IconCloud({ iconSlugs }: DynamicCloudProps) {
     </Cloud>
   );
 }
+
+export default IconCloud;

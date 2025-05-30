@@ -35,6 +35,7 @@ const Hero = () => {
 
   return (
     <div id="home" className="pb-20 pt-36">
+
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -55,22 +56,34 @@ const Hero = () => {
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>
 
-      <div className="flex justify-center relative my-20-z-10">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-        
-          <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dinesh Bukya 
-          </h2>
-          <TypewriterEffect
-            className="text-center md:text-5xl lg:text-6xl my-5"
-            words={words}
-          />
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-              Full Stack Developer
-          </p>
+      <div className="flex justify-center relative z-10 my-20">
+  <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-[90vw] md:max-w-[80vw] lg:max-w-[70vw] px-4 gap-10">
 
+    {/* Left: Text */}
+    <div className="flex flex-col items-center md:items-start text-center md:text-left">
+      <h2 className="uppercase tracking-widest text-xs text-blue-100 max-w-80 mb-2">
+        Dinesh Bukya
+      </h2>
+      <TypewriterEffect
+        className="text-center md:text-left md:text-5xl lg:text-6xl my-5"
+        words={words}
+      />
+      <p className="text-center md:text-left md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+        Full Stack Developer
+      </p>
     </div>
+
+    {/* Right: DP */}
+    <div className="shrink-0">
+      <img
+        src="/bdp.png" // Replace with correct path (e.g., /images/dinesh.jpg)
+        alt=""
+        className="w-36 h-36 md:w-48 md:h-48 rounded-full border-[3px] border-white shadow-2xl object-cover"
+      />
     </div>
+
+  </div>
+</div>
     </div>
   );
 };
