@@ -5,7 +5,7 @@ const nextConfig = {
   },
 
   // Comment these in dev mode
-  // basePath: "/Node",
-  // assetPrefix: "/Node/",
+   basePath: "/Node",
+   assetPrefix: "/Node/",
 };
 

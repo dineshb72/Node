@@ -9,18 +9,10 @@
   "homepage": "https://dineshb72.github.io/Node",
 
   "scripts": {
-
-    "dev": "next dev",
-
-    "build": "next build",
-
-    "start": "next start",
-
-    "lint": "next lint",
-
-    "deploy": "npm run build && touch out/.nojekyll && gh-pages -d out"
-
-  },
+  "dev": "next dev",
+  "build": "next build && next export",
+  "deploy": "gh-pages -d out"
+},
 
   "dependencies": {
 
