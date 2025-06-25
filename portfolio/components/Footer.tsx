@@ -13,12 +13,11 @@ const Footer = () => {
       </div>
       {/* background grid */}
       <div className="w-full absolute left-0 -bottom-72 min-h-96 ">
-        <img
-          src={`${process.env.NODE_ENV === 'production' ? '/Node/footer-grid.svg' : '/footer-grid.svg'}`}
-
-          alt="grid"
-          className="w-full h-full opacity-100 "
-        />
+       <img
+  src={`${process.env.NODE_ENV === 'production' ? '/Node/footer-grid.svg' : '/footer-grid.svg'}`}
+  alt="grid"
+  className="w-full h-full opacity-100"
+/>
       </div>
 
       <div className="flex flex-col items-center">

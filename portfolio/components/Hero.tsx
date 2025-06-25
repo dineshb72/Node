@@ -75,11 +75,11 @@ const Hero = () => {
 
     {/* Right: DP */}
     <div className="shrink-0">
-      <img
-        src="/bdp.png" // Replace with correct path (e.g., /images/dinesh.jpg)
-        alt=""
-        className="w-36 h-36 md:w-48 md:h-48 rounded-full border-[3px] border-white shadow-2xl object-cover"
-      />
+     <img
+  src={`${process.env.NODE_ENV === 'production' ? '/Node/bdp.png' : '/bdp.png'}`}
+  alt="Dinesh profile"
+  className="w-36 h-36 md:w-48 md:h-48 rounded-full border-[3px] border-white shadow-2xl object-cover"
+/>
     </div>
 
   </div>
