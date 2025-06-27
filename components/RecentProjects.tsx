@@ -1,6 +1,8 @@
 "use client";
+
 import { projects } from "@/data";
 import React from "react";
+import Image from 'next/image';
 import { PinContainer } from "./ui/PinContainer";
 import { FaLocationArrow } from "react-icons/fa";
 
@@ -21,24 +23,34 @@ const RecentProjects = () => {
             className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
           >
             <PinContainer title={link} href={link}>
+              {/* Project Header with BG and Cover */}
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
-                <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                  style={{ backgroundColor: "#13162D" }}
-                >
-                  <img src={`${prefix}/bg.png`} alt="bg" />
+                
+                {/* Background Image using fill layout */}
+                <div className="relative w-full h-full overflow-hidden lg:rounded-3xl">
+                  <Image
+                    src={`${prefix}/bg.png`}
+                    alt="project background"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-                <img
-                  src={`${prefix}${img}`}
-                  alt="cover"
-                  className="z-10 absolute bottom-0"
-                />
+
+                {/* Cover Image */}
+                <div className="absolute bottom-0 z-10 w-[300px] h-[200px] relative">
+                  <Image
+                    src={`${prefix}${img}`}
+                    alt={`${title} cover`}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
               </div>
 
+              {/* Title & Description */}
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                 {title}
               </h1>
-
               <p
                 className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
                 style={{
@@ -49,6 +61,7 @@ const RecentProjects = () => {
                 {des}
               </p>
 
+              {/* Icons & CTA */}
               <div className="flex items-center justify-between mt-7 mb-3">
                 <div className="flex items-center">
                   {iconLists.map((icon, index) => (
@@ -59,11 +72,14 @@ const RecentProjects = () => {
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <img
-                        src={`${prefix}${icon}`}
-                        alt={`icon-${index}`}
-                        className="p-2"
-                      />
+                      <div className="relative w-6 h-6">
+                        <Image
+                          src={`${prefix}${icon}`}
+                          alt={`tech-icon-${index}`}
+                          fill
+                          className="p-1 object-contain"
+                        />
+                      </div>
                     </div>
                   ))}
                 </div>
